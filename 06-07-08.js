@@ -16,7 +16,7 @@ function crearClasePersona() {
       this.hobbies = hobbies;
       this.amigos = amigos;
     }
-    
+
     addFriend(nombre, edad) {
       // El método 'addFriend' recibe un string 'nombre' y un entero 'edad' y debe agregar un objeto:
       // { nombre: nombre, edad: edad} al arreglo de amigos de la persona.
@@ -69,12 +69,12 @@ function crearClasePersona() {
       // persona.getPromedioEdad() debería devolver 29 ya que (33 + 25) / 2 = 29
 
       // Tu código aca:
-      return (this.amigos.reduce((acu, amigo) =>  acu + amigo.edad)) / (this.amigos.length);
-      
-    }
-  };
+      return (this.amigos.reduce((acu, amigo) =>  acu + amigo.edad, 0)) / (this.amigos.length);
+      }
 
+    }
   return Persona;
+  
 }
 
 // No modifiques nada debajo de esta linea //
