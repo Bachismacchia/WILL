@@ -33,7 +33,7 @@ function filtrar(funcion) {
     }
     return arr;
   }
-}   
+}   // todos resueltos
 
 // No modifiques nada debajo de esta linea //
 
